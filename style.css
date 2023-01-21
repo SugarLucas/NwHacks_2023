@@ -22,6 +22,12 @@ body {
     overflow-y: scroll;
 }
 
+header {
+	height: 60px;
+	background:#048a8a;
+	
+}
+
 html,
 body {
     width: 100%;
