@@ -22,10 +22,10 @@ function addTaskToArray (taskText) {
     const task = {
         id : Date.now(),
         title : taskText,
-        complated : false,
+        completed : false,
     };
     arrayOfTasks.push(task);
-    // console.log(arrayOfTasks);
+    console.log(arrayOfTasks);
     addTaskToPage(arrayOfTasks);
 
     addTaskToLocalStorage(arrayOfTasks);
@@ -37,7 +37,7 @@ function addTaskToPage(arrayOfTasks) {
     arrayOfTasks.forEach((task) => {
         let div = document.createElement("div");
         div.className = "task";
-        if(task.complated){
+        if(task.completed){
             div.className = "task done";
         }
         div.setAttribute("data-id",task.id);
@@ -47,7 +47,7 @@ function addTaskToPage(arrayOfTasks) {
         span.appendChild(document.createTextNode("Delete"))
         div.appendChild(span);
         tasksDiv.appendChild(div)
-        // console.log(div)
+        console.log(div)
     });
 }
 
@@ -59,7 +59,7 @@ function getTaskFromLocalStorage(){
     let data = window.localStorage.getItem("tasks")
     if(data){
         let tasks = JSON.parse(data);
-        // console.log(tasks)
+        console.log(tasks)
         addTaskToPage(tasks);
     }
 }
@@ -92,7 +92,7 @@ function addElementsToPageFrom(arrayOfTasks) {
 // Click On Task Element
 tasksDiv.onclick = ((e) => {
     if (e.target.classList.contains("del")) {
-        // e.target.parentElement.remove();
+        e.target.parentElement.remove();
         e.target.parentElement.remove();
         deleteTaskFromLocalStorage(e.target.parentElement.getAttribute("data-id"));
     }
@@ -110,7 +110,7 @@ function deleteTaskFromLocalStorage(taskId) {
 function updateStatusInLocalStorage(taskId) {
     arrayOfTasks.forEach((task) =>{
         if(task.id == taskId)
-            task.complated == false ? task.complated = true:task.complated = false;
+            task.completed == false ? task.completed = true:task.completed = false;
     });
 
     addTaskToLocalStorage(arrayOfTasks);
