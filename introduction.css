@@ -1,0 +1,99 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #55BDCE;
+    background: -webkit-radial-gradient(top left, #6ab0fb, #ACD1FB);
+     background: -moz-radial-gradient(top left, #6ab0fb, #ACD1FB);
+     background: radial-gradient(to bottom right, #6ab0fb, #ACD1FB);
+}
+
+header {
+    background: radial-gradient(circle, #0077be, #00bcd4);
+    padding: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #55BDCE;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #048a8a ；
+}
+
+main {
+    padding: 20px;
+}
+
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  
+
+section {
+
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #048a8a ；
+    color: white;
+}
+
+.card {
+    min-height: 80vh;
+    width: 80rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 0rem 2rem;
+    transform-style: preserve-3d;
+}
+
+footer {
+    background:#048a8a;
+    padding: 12px 0 12px 0;
+    text-align: center; }
+  
+.author {
+      color: #ffffff;
+      font-weight: 250;
+      font-size: calc(.5rem + .5vw);
+}
