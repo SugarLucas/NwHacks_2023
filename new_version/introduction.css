@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+    box-sizing : border-box;
+    margin: 0;
+    padding:0
+  }
+h3 {
+    font-size: 1.6rem;
+    color :rgb(9, 0, 48)
+    
+}
+
+h2 {
+    font-size: 1.1rem;
+    color :rgb(43, 43, 43)
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #55BDCE;
+    background: -webkit-radial-gradient(top left, #6ab0fb, #ACD1FB);
+    background: -moz-radial-gradient(top left, #6ab0fb, #ACD1FB);
+    background: radial-gradient(to bottom right, #6ab0fb, #ACD1FB);
+}
+
+header {
+    background: radial-gradient(circle, #0077be, #00bcd4);
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #55BDCE;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    height: 80 px;
+}
+
+nav li a:hover {
+    background-color: #048a8a;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    font-size :1.7rem;
+}
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #048a8a;
+    color: white;
+}
+
+.card {
+ min-height: 80vh;
+ width: 80rem;
+box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+border-radius: 40px;
+padding: 2rem 3rem;
+}
+
+footer {
+background:#048a8a;
+padding: 12px 0;
+text-align: center;
+}
+
+footer .author a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+footer .author a:hover {
+    color: #555;
+}
+
+.the.icon {
+    text-align: right;
+}
+
+.the.icon img {
+    width: 280px;
+    height: 100px;
+}
+
+.the.img_1 {
+    text-align: center;
+}
+
+.the.img_1 img {
+    width: 2800px;
+    height: 800px;
+}
+
+.Calendar {
+    padding: 14px 40px;
+    background : #2fb8b8;
+    border :none;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius:30px;
+    cursor: pointer;
+    font-family: inherit;
+    color:#f5f3e0;
+    font-weight :lighter;
+    font-size: 24px;
+
+  }
+  
+  Calendar.button {
+    color: white;
+    background: #585858;
+    text-align: center;
+    
+  }
+  
+
+
+

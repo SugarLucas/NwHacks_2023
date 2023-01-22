@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - JS Countdown Timer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="t.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="t.html">Todo List</a></li>
+            <li><a href="index.html">Calendar</a></li>
+            <div class = "the icon" id = "icon">
+                <a href="https://ibb.co/Xy94Rr2">
+                    <img src="https://i.ibb.co/k3pyCsH/Screenshot-2023-01-21-at-7-11-52-PM.png" alt="Screenshot-2023-01-21-at-7-11-52-PM" border="0">
+                </a>
+                <br />
+            </div>
+       
+        </ul>
+    </nav>
+</header>
+<!-- partial:index.partial.html -->
+<section id="todolist">
+  <div class = "content-div">
+    <div class="create-item-div">
+        <input id = "toggle-all-items-button" class="hide"
+        type = "checkbox" obclick = "controller.toggleAllItems()">
+        <form id ="create-item-form">
+            <input id = "create-item-input" type = "text"
+            placeholder="Add a new item"
+            onkeyup = "view.displayTodoItems()">
+        </form>
+        <button class = "x-button" onclick = "controller.clearForm()">
+            x
+        </button>
+        <button class = "create-item-button" class ="hide" onclick = "controller.createItem()">
+            +
+        </button>
+    </div>
+
+    <div class = "item-list-div">
+        <br>
+        <ul>
+
+        </ul>
+    </div>
+
+    <a id ="delete-all-items-button" onclick ="controller.deleteAllItems()">
+        DELETE ALL
+    </a>
+</div>
+
+<script src="./script.js"></script>
+
+<div id="app"></div>
+</section>
+
+<section id="timer">
+  <div id="app"></div>
+  <button type="button" id="start">start</button>
+
+  <form>
+    <label>Enter timer duration in seconds:</label>
+    <input type="number" id="timeLimitInput">
+    <input type="button" value="Submit" id="submit" onclick="setTimeLimit()">
+  </form>
+
+  <!-- partial -->
+    <script  src="t.js"></script>
+</section>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+body {
+  position: relative;
+  background: #1c8fac;
+  background: -webkit-radial-gradient(top left, #1c8fac, #ACD1FB);
+  background: -moz-radial-gradient(top left, #1c8fac, #ACD1FB);
+  background: radial-gradient(to bottom right, #1c8fac, #ACD1FB);
+  left: 500px;
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+header {
+  background: radial-gradient(circle, #0077be, #00bcd4);
+  padding: 20px;
+  margin-bottom: 20px;
+
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #55BDCE;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+  height: 80 px;
+}
+
+nav li a:hover {
+  background-color: #048a8a;
+}
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.the.icon {
+  text-align: right;
+}
+
+.the.icon img {
+  width: 280px;
+  height: 100px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: blue;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
