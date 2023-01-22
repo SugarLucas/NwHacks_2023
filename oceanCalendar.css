@@ -50,6 +50,9 @@
 body {
     position: realative;
     height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    perspective: 1000px;
   }
   body.overlay:before {
     position: fixed;
